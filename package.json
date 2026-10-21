@@ -1,0 +1,41 @@
+{
+  "name": "cine-aurora",
+  "version": "1.0.0",
+  "description": "Cinema fictício com catálogo, assentos e ingressos locais — Svelte e TypeScript",
+  "scripts": {
+    "artwork": "node scripts/artwork.mjs",
+    "format": "prettier --write .",
+    "preview": "vite preview",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "test": "node --test tests/*.test.ts",
+    "dev": "vite dev",
+    "build": "vite build"
+  },
+  "keywords": [],
+  "author": "Gustavo Paz",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "@sveltejs/adapter-static": "^4.0.0",
+    "@sveltejs/kit": "^3.1.0",
+    "@sveltejs/vite-plugin-svelte": "^7.3.1",
+    "@types/node": "^26.6.5",
+    "prettier": "^3.9.10",
+    "prettier-plugin-svelte": "^4.1.1",
+    "sharp": "^0.35.5",
+    "svelte": "^5.57.2",
+    "svelte-check": "^4.7.7",
+    "typescript": "^6.0.3",
+    "vite": "^8.3.5"
+  },
+  "dependencies": {
+    "@fontsource-variable/outfit": "^5.3.0",
+    "@fontsource-variable/space-grotesk": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "imports": {
+    "#lib/*": "./src/lib/*"
+  }
+}
